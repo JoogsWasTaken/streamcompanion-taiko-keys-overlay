@@ -1,0 +1,13 @@
+{
+    "keys": {
+        "centerLeft": "taikoCenterLeft.txt",
+        "rimLeft": "taikoRimLeft.txt",
+        "centerRight": "taikoCenterRight.txt",
+        "rimRight": "taikoRimRight.txt"
+    },
+    "layout": ["rimLeft", "centerLeft", "centerRight", "rimRight"],
+    "colorDon": "#aa321f",
+    "colorKat": "#2b5b6e",
+    "fadeOutMillis": 300,
+    "debug": false
+}
