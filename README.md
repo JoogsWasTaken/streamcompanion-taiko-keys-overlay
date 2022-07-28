@@ -3,7 +3,7 @@
 This repository contains an overlay for [Piotrekol's StreamCompanion](https://github.com/Piotrekol/StreamCompanion).
 It provides an alternative key overlay that you can adjust to reflect your taiko keybinds.
 For a demonstration, [check out the video in this tweet](https://twitter.com/taikohoot/status/1551617741311836162).
-This overlay is based on [my StreamCompanion overlay template](https://gitlab.com/joogswastaken/streamcompanion-taiko-keys-overlay).
+This overlay is based on [my StreamCompanion overlay template](https://gitlab.com/joogswastaken/streamcompanion-overlay-template).
 
 ## Installing the overlay
 
