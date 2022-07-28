@@ -57,14 +57,16 @@ const setup = (config) => {
         tokenToTaikoKeyMap.set(t, taikoKey);
     }
 
-    console.log("constructed mapping", tokenToTaikoKeyMap);
-
     // populate other fields
     taikoKeyLayout = config["layout"];
     donColor = config["colorDon"];
     katColor = config["colorKat"];
     fadeOutMillis = config["fadeOutMillis"];
     debug = config["debug"];
+
+    if (debug) {
+        console.log("constructed mapping", tokenToTaikoKeyMap);
+    }
 }
 
 /**
@@ -85,8 +87,6 @@ const onStatus = (key, value) => {
  * @param {number} value Amount of times hit (not really important here)
  */
 const onKey = (key, value) => {
-    console.log("isPlaying", isPlaying, "debug", debug);
-
     // ignore inputs if not playing
     if (!isPlaying && !debug) {
         return;
@@ -138,7 +138,9 @@ const render = (ctx, w, h) => {
             continue;
         }
 
-        console.log("rendering", taikoKey);
+        if (debug) {
+            console.log("rendering", taikoKey);
+        }
 
         const x = keyWidth * i;
         const isDon = ["centerLeft", "centerRight"].includes(taikoKey);
